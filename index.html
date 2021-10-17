@@ -19,20 +19,84 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> <!-- moment script -->
+
     <title>Work Day Scheduler</title>
+ 
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3">Day Scheduler</h1>
+      <p class="lead">Saving your time here</p>
+      <p id="current-day"></p>
+      <p id="save-notification"></p>
+      <div id="key">
+        <p class="past">Past Appointments</p>
+        <p class="present">Current Appointments</p>
+        <p class="future">Future Appointments</p>
+      </div>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+    <div class="row" id="8">
+      <div class="col-2">8-9 AM</div>
+      <textarea class="col-8 to-do" id="hr-8">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-8">Save</button>
+    </div> 
+    <div class="row" id="9">
+      <div class="col-2">9-10 AM</div>
+      <textarea class="col-8 to-do" id="hr-9">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-9">Save</button>
+    </div> 
+    <div class="row" id="10">
+      <div class="col-2">10-11 AM</div>
+      <textarea class="col-8 to-do" id="hr-10">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-10">Save</button>
+    </div> 
+    <div class="row" id="11">
+      <div class="col-2">11 AM to Noon</div>
+      <textarea class="col-8 to-do" id="hr-11">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-11">Save</button>
+    </div> 
+    <div class="row" id="12">
+      <div class="col-2">Noon to 1 PM</div>
+      <textarea class="col-8 to-do" id="hr-12">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-12">Save</button>
+    </div> 
+    <div class="row" id="13">
+      <div class="col-2">1-2 PM</div>
+      <textarea class="col-8 to-do" id="hr-13">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-13">Save</button>
+    </div> 
+    <div class="row" id="14">
+      <div class="col-2">2-3 PM</div>
+      <textarea class="col-8 to-do" id="hr-14">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-14">Save</button>
+    </div> 
+    <div class="row" id="15">
+      <div class="col-2">3-4 PM</div>
+      <textarea class="col-8 to-do" id="hr-15">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-15">Save</button>
+    </div> 
+    <div class="row" id="16">
+      <div class="col-2">4-5 PM</div>
+      <textarea class="col-8 to-do" id="hr-16">Enter to do here!</textarea>
+      <button class="col-2 save-btn" name="hr-16">Save</button>
+    </div> 
     </div>
 
+    <!-- jquery link 84-->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<!-- questions
+1. Why is my moment information not showing up?
+2. I think there's an issue with my jquery info being linked
+
+-->
