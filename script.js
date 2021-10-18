@@ -1,9 +1,7 @@
-// use this to run it all together if you have problems 
-//$(document).ready(function() {
-//})
+$(document).ready(function() {
 
 var currentDay = moment();
-var saveLocation = $("#save-notification")*************
+var saveLocation = $("#save-notification")
 var saveAlert = $("<p>");
 $("#current-day").text(currentDay.format("MMM Do, YYYY"));
 
@@ -14,16 +12,17 @@ $(".save-btn").on("click", function() {
 
     saveAlert.text("Your plan is saved during hour " + $(this).attr("name")) 
     saveLocation.append(saveAlert);
-    $('#8 .to-do').val(localStorage.getItem('hr-8'))
-    $('#9 .to-do').val(localStorage.getItem('hr-9'))
-    $('#10 .to-do').val(localStorage.getItem('hr-10'))
-    $('#11 .to-do').val(localStorage.getItem('hr-11'))
-    $('#12 .to-do').val(localStorage.getItem('hr-12'))
-    $('#13 .to-do').val(localStorage.getItem('hr-13'))
-    $('#14 .to-do').val(localStorage.getItem('hr-14'))
-    $('#15 .to-do').val(localStorage.getItem('hr-15'))
-    $('#16 .to-do').val(localStorage.getItem('hr-16'))
 })
+
+$('#8 .to-do').val(localStorage.getItem('hr-8'))
+$('#9 .to-do').val(localStorage.getItem('hr-9'))
+$('#10 .to-do').val(localStorage.getItem('hr-10'))
+$('#11 .to-do').val(localStorage.getItem('hr-11'))
+$('#12 .to-do').val(localStorage.getItem('hr-12'))
+$('#13 .to-do').val(localStorage.getItem('hr-13'))
+$('#14 .to-do').val(localStorage.getItem('hr-14'))
+$('#15 .to-do').val(localStorage.getItem('hr-15'))
+$('#16 .to-do').val(localStorage.getItem('hr-16'))
 
 function colorUpdate() {
     var momentTime = moment().hours();
@@ -46,6 +45,7 @@ function colorUpdate() {
 colorUpdate();
 
 var pageRefresh = setInterval(colorUpdate, 15000)
+})
 
 
     // and then do the conditional statements
